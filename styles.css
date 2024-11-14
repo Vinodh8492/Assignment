@@ -1,0 +1,274 @@
+.body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12vw;
+    margin-left: 10vw;
+}
+
+.firstheader,
+.secondheader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.enquiry,
+.msg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+}
+
+.startup {
+    width: 9vw;
+    height: 5vh;
+}
+
+.emblem {
+    width: 10vw;
+    height: 7vh;
+}
+
+.isro {
+    width: 12vw;
+    height: 7vh;
+}
+
+.whatsapp {
+    width: 5vw;
+    height: 5vh;
+}
+
+.call {
+    width: 4vw;
+    height: 5vh;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 30px;
+    background-color: orange;
+}
+
+.number,
+.mail {
+    color: orange;
+    font-size: 20px;
+}
+
+.number {
+    margin-left: -1vw;
+}
+
+.number:hover,
+.mail:hover {
+    color: blue;
+}
+
+.message {
+    width: 3vw;
+    height: 3vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10vw;
+    margin-left: 10vw;
+    margin-top: 3vh;
+}
+
+.digimare {
+    width: 25vw;
+    height: 12vh;
+    margin-left: 2.5vw;
+    margin-bottom: 2vh;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5vw;
+    margin-left: -4vw;
+}
+
+.combinesection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.hometext {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0.5vh;
+    color: black;
+    transition: color 0.3s ease;
+    margin-bottom: 2.5vh;
+}
+
+.combinesection:hover .hometext {
+    color: orange;
+}
+
+.combinesection:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    background-color: rgb(72, 227, 72);
+    transition: height 0.3s ease;
+    border-radius: 2px;
+    border-color: none;
+}
+
+.home {
+    width: 3vw;
+    height: 5vh;
+    margin-bottom: 0;
+}
+
+.ourservices {
+    width: 3vw;
+    height: 5vh;
+    margin-bottom: 0;
+}
+
+.line {
+    width: 100vw;
+    height: -0.1px;
+    background-color: black;
+    margin-top: -2.5vh;
+}
+
+.main {
+    width: 100vw;
+    height: 70vh;
+}
+
+.mainimage {
+    width: 100%;
+    height: 100%;
+}
+
+.sec1,
+.sec2 {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+    line-height: 0;
+    text-align: left;
+}
+
+.sec3 {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+    line-height: 0;
+    text-align: left;
+}
+
+li {
+    font-weight: bold;
+}
+
+li:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.line1,
+.line2,
+.line3 {
+    color: black;
+    width: 15vw;
+    line-height: 1vh;
+    border-style: dashed;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    margin-left: 0vw;
+}
+
+.line2 {
+    width: 22vw;
+}
+
+.line3 {
+    width: 10vw;
+}
+
+.overlay,
+.overlay1,
+.overlay3 {
+    border-radius: 10px;
+    display: none;
+    position: fixed;
+    top: 25vh;
+    left: 30vw;
+    width: 60vw;
+    height: 40vh;
+    background-color: white;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding-top: 2.5vh;
+}
+
+.overlay1 {
+    left: 20vw;
+    width: 80vw;
+    height: 36vh;
+}
+
+.overlay3 {
+    left: 75vw;
+    width: 18vw;
+    height: 45vh;
+}
+
+.combinesection:hover+.overlay {
+    display: flex;
+}
+
+.overlay:hover {
+    display: flex;
+}
+
+.combinesection:hover+.overlay1 {
+    display: flex;
+}
+
+.overlay1:hover {
+    display: flex;
+}
+
+.combinesection:hover+.overlay3 {
+    display: flex;
+}
+
+.overlay3:hover {
+    display: flex;
+}
